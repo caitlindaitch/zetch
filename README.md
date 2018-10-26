@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="./src/logo.png" alt="Zetch logo">
-</p>
+<img src="./src/logo.png" alt="Zetch logo">
 
 # Zetch
 
