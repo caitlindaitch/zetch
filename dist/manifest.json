@@ -1,0 +1,11 @@
+{
+  "packageName": "zetch",
+  "name": "zetch",
+  "description": "Smart CSS style to class matcher.",
+  "version": "0.1.0",
+  "projectTypes": [
+    "web"
+  ],
+  "moduleURL": "./main.js",
+  "readmeURL": "./README.md"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "zetch",
+  "version": "0.1.0",
+  "description": "Smart CSS style to class matcher.",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "publish": "zem publish"
+  },
+  "zeplin": {
+    "displayName": "zetch",
+    "projectTypes": [
+      "web"
+    ]
+  },
+  "dependencies": {
+    "zem": "^0.3.3",
+    "zeplin-extension-style-kit": "^1.0.0"
+  }
+}

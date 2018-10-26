@@ -1,0 +1,132 @@
+{
+    "type": "stylesheet",
+    "level": "simple",
+    "value": [
+        {
+            "type": "rule",
+            "selectors": [
+                ".alpha"
+            ],
+            "declarations": {
+                "font-size": "36px"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".beta"
+            ],
+            "declarations": {
+                "font-size": "24px"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".gamma"
+            ],
+            "declarations": {
+                "font-size": "20px"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".delta"
+            ],
+            "declarations": {
+                "font-size": "18px"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".epsilon"
+            ],
+            "declarations": {
+                "font-size": "16px"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".font-weight-normal"
+            ],
+            "declarations": {
+                "font-weight": "bold"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".font-weight-bold"
+            ],
+            "declarations": {
+                "font-weight": "bold"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".text-color-zetch-orange"
+            ],
+            "declarations": {
+                "color": "#E86524"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".text-color-zetch-dark-yellow"
+            ],
+            "declarations": {
+                "color": "#FBB636"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".text-color-zetch-light-yellow"
+            ],
+            "declarations": {
+                "color": "#FBCD31"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".text-color-white"
+            ],
+            "declarations": {
+                "color": "white"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".bg-color-zetch-orange"
+            ],
+            "declarations": {
+                "background-color": "#E86524"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".bg-color-zetch-dark-yellow"
+            ],
+            "declarations": {
+                "background-color": "#FBB636"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".bg-color-zetch-light-yellow"
+            ],
+            "declarations": {
+                "background-color": "#FBCD31"
+            }
+        }
+    ]
+}
