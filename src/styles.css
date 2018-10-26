@@ -50,6 +50,10 @@
   color: rgba(255, 255, 255, 1);
 }
 
+.text-color-black {
+  color: rgba(0, 0, 0, 1);
+}
+
 .bg-color-zetch-orange {
   background-color: rgba(232, 101, 36, 1);
 }
@@ -64,4 +68,8 @@
 
 .bg-color-zetch-blue {
   background-color: rgba(19, 147, 155, 1);
+}
+
+.bg-color-black {
+  background-color: rgba(0, 0, 0, 1);
 }

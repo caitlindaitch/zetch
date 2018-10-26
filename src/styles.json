@@ -122,6 +122,15 @@
         {
             "type": "rule",
             "selectors": [
+                ".text-color-black"
+            ],
+            "declarations": {
+                "color": "rgba(0,0,0,1)"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
                 ".bg-color-zetch-orange"
             ],
             "declarations": {
@@ -153,6 +162,15 @@
             ],
             "declarations": {
                 "background-color": "rgba(19,147,155,1)"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".bg-color-black"
+            ],
+            "declarations": {
+                "background-color": "rgba(0,0,0,1)"
             }
         }
     ]
