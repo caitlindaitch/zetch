@@ -56,15 +56,19 @@ function layer(context, selectedLayer) {
 
 function styleSheetPropertyValueMatchesLayer(property, styleSheetRule, layerRules)
 {
+    if (!layerRules[property] || !layerRules[property].value) {
+        return false;
+    }
+
+    const layerValue = layerRules[property].value;
+    const styleSheetValue = styleSheetRule[property];
+
     switch (property) {
         case 'font-size':
-            if (!layerRules[property] || !layerRules[property].value) {
-                return false;
-            }
-            const layerString = layerRules[property].value.value + layerRules[property].value.unit;
-            return layerString === styleSheetRule[property];
+            const layerString = layerValue.value + layerValue.unit;
+            return layerString === styleSheetValue;
         default:
-            return layerRules[property].value === styleSheetRule[property];
+            return layerValue === styleSheetValue;
     }
 }
 
