@@ -2,58 +2,58 @@
     font-size: 36px;
   }
 
-  .beta {
-    font-size: 24px;
-  }
+.beta {
+  font-size: 24px;
+}
 
-  .gamma {
-    font-size: 20px;
-  }
+.gamma {
+  font-size: 20px;
+}
 
-  .delta {
-    font-size: 18px;
-  }
+.delta {
+  font-size: 18px;
+}
 
-  .epsilon {
-    font-size: 16px;
-  }
+.epsilon {
+  font-size: 16px;
+}
 
-  .font-weight-normal {
-    font-weight: 400;
-  }
+.font-weight-normal {
+  font-weight: 400;
+}
 
-  .font-weight-bold {
-    font-weight: 700;
-  }
+.font-weight-bold {
+  font-weight: 700;
+}
 
-  .font-style-italic {
-    font-style: italic;
-  }
+.font-style-italic {
+  font-style: italic;
+}
 
-  .text-color-zetch-orange {
-    color: #E86524;
-  }
+.text-color-zetch-orange {
+  color: rgba(232, 101, 36, 1);
+}
 
-  .text-color-zetch-dark-yellow {
-    color: #FBB636;
-  }
+.text-color-zetch-dark-yellow {
+  color: rgba(251, 182, 54, 1);
+}
 
-  .text-color-zetch-light-yellow {
-    color: #FBCD31;
-  }
+.text-color-zetch-light-yellow {
+  color: rgba(251, 205, 49, 1);
+}
 
-  .text-color-white {
-    color: white
-  }
+.text-color-white {
+  color: rgba(255, 255, 255, 1);
+}
 
-  .bg-color-zetch-orange {
-    background-color: #E86524;
-  }
+.bg-color-zetch-orange {
+  background-color: rgba(232, 101, 36, 1);
+}
 
-  .bg-color-zetch-dark-yellow {
-    background-color: #FBB636;
-  }
+.bg-color-zetch-dark-yellow {
+  background-color: rgba(251, 182, 54, 1);
+}
 
-  .bg-color-zetch-light-yellow {
-    background-color: #FBCD31;
-  }
+.bg-color-zetch-light-yellow {
+  background-color: rgba(251, 205, 49, 1);
+}

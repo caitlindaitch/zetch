@@ -68,10 +68,19 @@
         {
             "type": "rule",
             "selectors": [
+                ".font-style-italic"
+            ],
+            "declarations": {
+                "font-style": "italic"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
                 ".text-color-zetch-orange"
             ],
             "declarations": {
-                "color": "#E86524"
+                "color": "rgba(232,101,36,1)"
             }
         },
         {
@@ -80,7 +89,7 @@
                 ".text-color-zetch-dark-yellow"
             ],
             "declarations": {
-                "color": "#FBB636"
+                "color": "rgba(251,182,54,1)"
             }
         },
         {
@@ -89,7 +98,7 @@
                 ".text-color-zetch-light-yellow"
             ],
             "declarations": {
-                "color": "#FBCD31"
+                "color": "rgba(251,205,49,1)"
             }
         },
         {
@@ -98,7 +107,7 @@
                 ".text-color-white"
             ],
             "declarations": {
-                "color": "white"
+                "color": "rgba(255,255,255,1)"
             }
         },
         {
@@ -107,7 +116,7 @@
                 ".bg-color-zetch-orange"
             ],
             "declarations": {
-                "background-color": "#E86524"
+                "background-color": "rgba(232,101,36,1)"
             }
         },
         {
@@ -116,7 +125,7 @@
                 ".bg-color-zetch-dark-yellow"
             ],
             "declarations": {
-                "background-color": "#FBB636"
+                "background-color": "rgba(251,182,54,1)"
             }
         },
         {
@@ -125,7 +134,7 @@
                 ".bg-color-zetch-light-yellow"
             ],
             "declarations": {
-                "background-color": "#FBCD31"
+                "background-color": "rgba(251,205,49,1)"
             }
         }
     ]

@@ -35,6 +35,7 @@ function layer(context, selectedLayer) {
 
     styleSheetRules.forEach(function(rule) {
         let ruleMatches = true;
+
         for (let property in rule.declarations) {
             if (!layerProperties.includes(property)) {
                 ruleMatches = false;
@@ -53,20 +54,51 @@ function layer(context, selectedLayer) {
 
 function styleSheetPropertyValueMatchesLayer(property, styleSheetRule, layerRules)
 {
-    if (!layerRules[property] || !layerRules[property].value) {
-        return false;
+    try {
+        if (!layerRules[property] || !layerRules[property].value) {
+            return false;
+        }
+    
+        const layerValue = layerRules[property].value;
+        const styleSheetValue = styleSheetRule[property];
+    
+        switch (property) {
+            case 'font-size':
+                const layerString = layerValue.value + layerValue.unit;
+                return layerString === styleSheetValue;
+            case 'color':
+                return colorsMatch(styleSheetValue, layerValue.object);
+            default:
+                return layerValue === styleSheetValue;
+        }
+    } catch (error) {
+
+    }
+}
+
+function convertColorStringToArray(stylesheetColorString) {
+    var newString = stylesheetColorString.slice(5, stylesheetColorString.length - 1);
+    var array = newString.split(',');
+    
+    return array
+}
+
+function colorsMatch(styleSheetColor, layerColor) {
+    let styleSheetColorArray = convertColorStringToArray(styleSheetColor);
+    let colorMatches = true;
+    let matches = true;
+
+    if (layerColor.r.toString() !== styleSheetColorArray[0]) {
+        matches = false;
+    } else if (layerColor.g.toString() !== styleSheetColorArray[1]) {
+        matches = false;
+    } else if (layerColor.b.toString() !== styleSheetColorArray[2]) {
+        matches = false;
+    } else if (layerColor.a.toString() !== styleSheetColorArray[3]) {
+        matches = false;
     }
 
-    const layerValue = layerRules[property].value;
-    const styleSheetValue = styleSheetRule[property];
-
-    switch (property) {
-        case 'font-size':
-            const layerString = layerValue.value + layerValue.unit;
-            return layerString === styleSheetValue;
-        default:
-            return layerValue === styleSheetValue;
-    }
+    return matches;
 }
 
 export default {
