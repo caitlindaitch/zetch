@@ -27,25 +27,19 @@ function layer(context, selectedLayer) {
         });
     }
 
-    var cssClasses = [];
-
+    const styleSheetRules = styles ? styles.value : [];
     const layerRules = layerRuleSet.declarationMap;
     const layerProperties = Object.keys(layerRules);
 
-    const styleSheetRules = styles ? styles.value : [];
-    console.log("HERE");
-    console.log(JSON.stringify(styleSheetRules));
-
+    let cssClasses = [];
 
     styleSheetRules.forEach(function(rule) {
         let ruleMatches = true;
-
-        var declarations = rule.declarations;
-        for (var property in declarations) {
+        for (let property in rule.declarations) {
             if (!layerProperties.includes(property)) {
                 ruleMatches = false;
             } else {
-                ruleMatches = styleSheetPropertyValueMatchesLayer(property, declarations, layerRules);
+                ruleMatches = styleSheetPropertyValueMatchesLayer(property, rule.declarations, layerRules);
             }
         }
 
