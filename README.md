@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./src/zetch-logo.png" alt="Zetch logo">
+  <img src="./src/logo.png" alt="Zetch logo">
 </p>
 
 # Zetch
