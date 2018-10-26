@@ -104,6 +104,15 @@
         {
             "type": "rule",
             "selectors": [
+                ".text-color-zetch-blue"
+            ],
+            "declarations": {
+                "color": "rgba(19,147,155,1)"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
                 ".text-color-white"
             ],
             "declarations": {
@@ -135,6 +144,15 @@
             ],
             "declarations": {
                 "background-color": "rgba(251,205,49,1)"
+            }
+        },
+        {
+            "type": "rule",
+            "selectors": [
+                ".bg-color-zetch-blue"
+            ],
+            "declarations": {
+                "background-color": "rgba(19,147,155,1)"
             }
         }
     ]

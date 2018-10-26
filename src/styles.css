@@ -42,6 +42,10 @@
   color: rgba(251, 205, 49, 1);
 }
 
+.text-color-zetch-blue {
+  color: rgba(19, 147, 155, 1);
+}
+
 .text-color-white {
   color: rgba(255, 255, 255, 1);
 }
@@ -56,4 +60,8 @@
 
 .bg-color-zetch-light-yellow {
   background-color: rgba(251, 205, 49, 1);
+}
+
+.bg-color-zetch-blue {
+  background-color: rgba(19, 147, 155, 1);
 }
