@@ -44,14 +44,11 @@ function layer(context, selectedLayer) {
         }
 
         if (ruleMatches) {
-            cssClasses = [cssClasses, ...rule.selectors];
+            cssClasses = [...cssClasses, ...rule.selectors];
         }
-    })
+    });
 
-    return {
-        code: cssClasses.join(' '),
-        language: 'css'
-    };
+    return cssClasses.join(' ');
 }
 
 function styleSheetPropertyValueMatchesLayer(property, styleSheetRule, layerRules)

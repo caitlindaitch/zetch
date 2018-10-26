@@ -53,7 +53,7 @@
                 ".font-weight-normal"
             ],
             "declarations": {
-                "font-weight": "bold"
+                "font-weight": 400
             }
         },
         {
@@ -62,7 +62,7 @@
                 ".font-weight-bold"
             ],
             "declarations": {
-                "font-weight": "bold"
+                "font-weight": 700
             }
         },
         {
