@@ -6,7 +6,6 @@ var styles = require('./styles.json');
 function layer(context, selectedLayer) {
     const l = new Layer(selectedLayer);
     const layerRuleSet = l.style;
-
     const childrenRuleSet = [];
     const { defaultTextStyle } = selectedLayer;
 
@@ -54,25 +53,23 @@ function layer(context, selectedLayer) {
 
 function styleSheetPropertyValueMatchesLayer(property, styleSheetRule, layerRules)
 {
-    try {
-        if (!layerRules[property] || !layerRules[property].value) {
-            return false;
-        }
-    
-        const layerValue = layerRules[property].value;
-        const styleSheetValue = styleSheetRule[property];
-    
-        switch (property) {
-            case 'font-size':
-                const layerString = layerValue.value + layerValue.unit;
-                return layerString === styleSheetValue;
-            case 'color':
-                return colorsMatch(styleSheetValue, layerValue.object);
-            default:
-                return layerValue === styleSheetValue;
-        }
-    } catch (error) {
+    if (!layerRules[property]) {
+        return false;
+    }
 
+    const layerValue = layerRules[property];
+    const styleSheetValue = styleSheetRule[property];
+
+    switch (property) {
+        case 'font-size':
+            const layerString = layerValue.value.value + layerValue.value.unit;
+            return layerString === styleSheetValue;
+        case 'color':
+            return colorsMatch(styleSheetValue, layerValue.value.object);
+        case 'background-color':
+            return colorsMatch(styleSheetValue, layerValue.color.object);
+        default:
+            return layerValue.value === styleSheetValue;
     }
 }
 
