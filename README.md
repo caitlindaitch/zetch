@@ -1,6 +1,10 @@
 # Zetch
 
-Zetch is a Zeplin plugin that outputs CSS helper classes that match the selected Zeplin layer. This allows the developer to copy the outputted CSS classes and apply them directly to the selected HTML element instead of duplicating CSS that already exists by copying the CSS class created by the default Zeplin output.
+A Zeplin extension for designers and developers to stick to a design system by converting the Zeplin-generated CSS into a list of classes from an existing stylesheet that match the selected element.
+
+## How it works
+
+Zetch outputs CSS helper classes that match the selected Zeplin layer. This allows the developer to copy the outputted CSS classes and apply them directly to the selected HTML element instead of duplicating CSS that already exists by copying the CSS class created by the default Zeplin output.
 
 ## Set up
 
