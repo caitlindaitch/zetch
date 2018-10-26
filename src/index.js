@@ -64,7 +64,7 @@ function styleSheetPropertyValueMatchesLayer(property, styleSheetRule, layerRule
             const layerString = layerRules[property].value.value + layerRules[property].value.unit;
             return layerString === styleSheetRule[property];
         default:
-            return false;
+            return layerRules[property].value === styleSheetRule[property];
     }
 }
 
