@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./src/zetch-logo.png" alt="Zetch logo">
+</p>
+
 # Zetch
 
 A Zeplin extension for designers and developers to stick to a design system by converting the Zeplin-generated CSS into a list of classes from an existing stylesheet that match the selected element.
