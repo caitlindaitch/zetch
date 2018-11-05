@@ -2,7 +2,7 @@
 
 # Zetch
 
-A Zeplin extension for designers and developers to stick to a design system by converting the Zeplin-generated CSS into a list of classes from an existing stylesheet that match the selected element.
+A Zeplin extension for designers and developers to work with a design system by converting the Zeplin-generated CSS into a list of classes from an existing stylesheet that match the selected element.
 
 ## How it works
 
